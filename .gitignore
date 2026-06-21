@@ -1,0 +1,16 @@
+# İşletim sistemi kalıntıları
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Editör ayarları
+.vscode/
+.idea/
+
+# İleride JavaScript kütüphaneleri kullanırsanız diye önlem
+node_modules/
+npm-debug.log*
+
+# Log dosyaları ve geçici dosyalar
+*.log
+.tmp/
