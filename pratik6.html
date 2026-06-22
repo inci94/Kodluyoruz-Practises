@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <title>Görsellerle Çalışmak</title>
+    <!--Çeşitli görsel yükleme yöntemlerinden kurta gösterilenlere örnek verdim-->
+    <img src="https://fastly.picsum.photos/id/399/200/200.jpg?hmac=LCWCFY16G50iBPpqU6-FCw79ovEqvznYsxoQNCIldV8"
+        alt="Lorem Picsum">
+    <!--Bu yöntemle web sayfalarından gelen canlı görsel linkleri görebiliriz-->
+    <img src="./gorsel/gorsel1.jpeg" width="100" height="100" title="Random Görsel" alt="Lorem Picsum">
+    <!--Slash kullanarak bilgisayarda var olan görsel dosyasından görsel çekmek ve alt klasöre inmek, ayrıca title özelliğiyle görsel bilgisi vermek, yükseklik ayarı-->
+    <img src="../HTML_skillcamp/gorsel/ek gorsel/gorsel2.jpg" alt="Lorem Picsum">
+    <!--Üst klasöre çıkarak görsel eklemek-->
+    <img src="https://fastly.picsum.photos/id/1081/200/300.jpg?hmac=ntCnXquH7cpEF0vi5yvz1wKAlRyd2EZwZJQbgtfknu8"
+        border="5" />
+    <!--Görsele kenar kalınlığı vermek-->
+    <img src="https://fastly.picsum.photos/id/116/200/300.jpg?hmac=uPAnc-n8DQQ64MK4BNdh5H0jZftgEJ1sWpFPDBHni5o"
+        align="right">
+    <!--görseli  sağa yaslamak-->
+    <img src="https://fastly.picsum.photos/id/864/200/300.jpg?hmac=pHxnt4rXpNHIqBRpVSe-yL_pDtdwDfasgfub8GwI5mw"
+        align="left">
+    <!--görseli sola yaslamak-->
+    <a href="default.asp">
+        <img src="https://fastly.picsum.photos/id/297/200/300.jpg?hmac=SF0Y51mRP7i6CoLBIuliqQwDIUJNyf63_r3xhamVSLE"
+            alt="HTML Tutorial" style="width:200px;height:150px;">
+    </a>
+    <!--Görsele link vermek-->
+    <img src="https://fastly.picsum.photos/id/297/200/300.jpg?hmac=SF0Y51mRP7i6CoLBIuliqQwDIUJNyf63_r3xhamVSLE"
+        alt="Workplace" usemap="#workmap" width="150" height="150">
+    <map name="workmap">
+        <area shape="rect" coords="10,10,140,90" alt="Ambar Binası" href="bina.html">
+        <area shape="circle" coords="75,120,25" alt="Toprak Yol" href="yol.html">
+    </map>
+    <!--Belirlediğimiz alana link vermek için-->
+    <img src="https://fastly.picsum.photos/id/406/200/300.jpg?hmac=hL72xK7v5nIaSK6F5XcGWjvxXslx72ZNRshXUAci5Bc"
+        alt="Onload Event">
+    <script>
+        function resimYuklendi() {
+            alert("Resim yüklendi.");
+        }
+    </script>
+    <!--Onload Elementi kullanımı-->
+    <picture>
+        <source
+            srcset="https://fastly.picsum.photos/id/40/200/300.jpg?hmac=1W_CCXwLDbBONqjiVzw4WW5Zvi3P7AByQQDuqpALR5w">
+
+        <img src="https://picsum.photos/200/300" alt="picture elementi">
+    </picture>
+    <!--picture elementi kullanımı-->
+</body>
+
+</html>
